@@ -1,0 +1,9 @@
+Clear Flags（清除标记）：控制模型外的空白部分的显示方式，包括天空盒（skybox）、solid color（纯色填充）、depth only（当有game中有多个camera时，深度高的背景不作渲染,保留模型物体）
+ ：隐藏不想要的模型属性，Layer代表分类，添加模型的分类或层次，如bullet模型的layer->ui，当你想隐藏bullet时，将culling mask的ui不勾选，即可达到不可见以减少渲染量的目的
+Projection：camera2D与3D模式的转换，忽略一个轴的视角，Perspective做3D，Orthographic做2D
+{Field of View：用来放大缩小3D视距，可以做枪战游戏开关镜
+size：放大缩小2D视距}
+
+Clipping Planes：near前移视距起始点，可以做面向物体临近消失；far后移视距终点，可以做限制视角内所看到的物体，减少远景渲染以减少渲染量
+Viewport Rect：x控制视距横向缩放，y控制视距纵向缩放，w宽度，h高度，多个摄像机可以实现分屏及小地图
+Depth：多个摄像机时，决定渲染的先后，深度越大，渲染越优先

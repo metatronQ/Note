@@ -1,0 +1,4 @@
+java是由c++编写的;
+java是编译型和解释型语言的结合，编译命令：javac.exe，解释命令：java.exe
+java程序组成：java源文件、字节码文件（class）、机器码文件
+jvm：java虚拟机

@@ -1,0 +1,2 @@
+CALSSPATH:类的加载路径
+SET CLASSPATH =.S

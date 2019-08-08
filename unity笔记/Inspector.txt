@@ -1,0 +1,4 @@
+Transform 决定position（位置）、rotation（旋转）、scale（缩放比）
+Mesh Filter 决定容器形状
+Mesh Renderer 渲染容器，包括颜色等。
+即使是一个小小的cube（正方体），也必须通过两个面板获得形状。

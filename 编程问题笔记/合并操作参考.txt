@@ -1,0 +1,36 @@
+void MergeList (SeqList La,SeqList Lb,SeqList *Lc)
+{
+    int i,j;
+    i=j=0;
+    int k=0;
+    int La_len,Lb_len;
+    La_len = ListLength(La);
+    Lb_len = ListLength(Lb);
+    int ai,bj;
+    while ((i<La_len)&&(j<Lb_len))
+    {
+        ListGet(La,i,&ai);
+        ListGet(Lb,j,&bj);
+        if(ai<bj)
+        {
+            ListInsert(Lc,k++,ai);
+        }
+        else
+        {
+            ListInsert(Lc,j++,bj);
+        }
+    }
+    while (i<La_len)
+    {
+        ListGet(La,i++,&ai);
+        ListInsert(Lc,k++,ai);
+
+    }
+    while(j<Lb_len)
+    {
+        ListGet(Lb,j++,&bj);
+        ListInsert(Lc,k++,bj);
+
+    }
+
+}

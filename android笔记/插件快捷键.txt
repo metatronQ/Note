@@ -1,0 +1,2 @@
+GsonFormat:alt + s;
+Javadoc:shift+alt + g添加，+z删除，在java文件上右键有选项一键全部添加

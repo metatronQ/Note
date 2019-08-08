@@ -1,0 +1,24 @@
+方法重载
+方法名称相同，参数的类型或个数不同；
+
+eg：
+
+。。。int add（int x，int y）{
+
+return x+y；
+
+}
+
+。。。 int add（int x ，int y，int z）{
+
+return x + y + z；
+
+}
+
+。。。double add （double x，double y）{
+
+return x + y；
+
+}
+
+即：不论传入的参数多少，什么类型，最终完成的功能是一样的，方法名字也是一样的（名字==功能），并要求重载的方法返回值与原方法相同；

@@ -1,0 +1,15 @@
+char可以与int互相转换
+实现大写字母与小写字母的互换（UNICODE>asc2）：a=A+32；
+
+char->int:
+
+int = (int + )字符变量;
+
+int ->char:
+
+char = (char)int;
+
+
+
+支持中文与int的转换；
+

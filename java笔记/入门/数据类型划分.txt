@@ -1,0 +1,21 @@
+基本数据类型：
+数值型：整数或小数
+
+整型：int、short、long、byte;默认：0
+浮点型：double、floaat;默认0.0(浮点数默认类型：double：0.0(一位) float：0.0F(f); long:0L(l);)
+字符型：char 默认'\u0000';
+布尔型：boolean：默认false
+
+
+
+引用数据类型：数组、类、接口；默认null
+
+一般什么时候用：
+整数int；
+小数double；
+日期时间、内存、文件大小long；
+字符转换、二进制数据传输byte（-128~127）；
+
+
+
+

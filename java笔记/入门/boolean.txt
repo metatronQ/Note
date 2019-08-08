@@ -1,0 +1,5 @@
+boolean test = 10>1; return test;
+
+test->true;
+
+java没有赋予布尔型0或1的概念

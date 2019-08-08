@@ -1,0 +1,17 @@
+即时遮挡剔除：剔除摄像机看不到的物体，减少渲染量。（密集物体）
+Layer mask：参与遮挡剔除的游戏对象层；
+IOC Tag：将为指定标签的游戏对象自动添加IOClod脚本对象；
+Samples：每帧摄像机发射的射线数目，数量多剔除效果好，但性能开销大，通常150-500；
+Rays FOV：射线视野，应大于摄像机视野Field of View；
+View Distance：视图距离，射线长度，将影响摄像机Clipping Planes -Far数值；
+Hide Delay：延迟隐藏，当物体被剔除时延迟的帧数（建立多帧射线防止物体没被检测到） 50-100；
+PreCull Check：检查采集信息，勾选提高剔除效率；
+Realtime Shadows：实时阴影，确保剔除物体显示正常的阴影；
+
+步骤：1.创建层
+	2.为游戏物体指定层（layer）与标签（tag）
+	3.物体添加Colider（碰撞器）组件（便于物体的检测）
+	4.摄像机附加脚本IOCcam
+
+LOD：levels of Detail
+根据模型的节点在显示环境中所处的位置及重要度，决定使用精细度不同的模型
