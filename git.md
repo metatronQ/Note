@@ -41,6 +41,8 @@ git commit 将暂存区的所有内容提交到当前分支
 **1.添加远程库：**  
 
 * *关联一个远程库：*git remote add origin git@server-name:path/name.git(git remote add origin git@github.com:metatronQ/MyAndroidDemo.git)
+* 删除远程连接：删除远程连接：git remote rm origin
+
 * *关联后：*使用命令git push -u origin master第一次推送master分支的所有内容
 * *此后每次提交：*git push origin master 推送最新修改
 
