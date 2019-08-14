@@ -19,17 +19,17 @@
 
 # ViewStub方法：
 
-* **(void)draw(Canvas canvas):**绘制方法
-* **(void)onMeasure(int widthMeasureSpec, int heightMeasureSpec):绘制之前的测量方法**
-* **(int)getInflatedId():**get需要加载的布局id
-* **(LayoutInflater)getLayoutInflater():**get布局加载器
-* **(int)getLayoutResource():**get需要加载的布局
-* **(View)inflate():**见源码解析
-* **(void)setInflatedId(int inflatedId):**对应android:inflatedId
-* **(void)setLayoutInflater(LayoutInflater inflater):**设置布局加载器
-* **(void)setLayoutResource(int layoutResource):**对应android:layout
-* **(void)setOnInflateListener(ViewStub.OnInflateListener inflateListener):**ViewStub的监听方法，传入一个ViewStub内置的回调接口，当ViewStub调用inflate时，在布局扩张之前会调用这个方法，回调返回的该ViewStub实例和其引用的View实例，调用View的findViewById方法可以获得布局中的控件实例，虽然不知道有什么用，不过这个监听方法确实可以通过返回的View在布局**完全展示（？）** 之前拿到其中控件的实例，可以进行一些初始化操作；**注意：该监听方法应声明在inflate方法之前，如果在inflate方法之后，那么此时布局已经完成了扩充，将不会调用该方法**
-* **(void)setVisibility(int visibility):**可以启动ViewStub，比inflate更加安全，见inflate与setVisibility的异同
+* **(void)draw(Canvas canvas):** 绘制方法 
+* **(void)onMeasure(int widthMeasureSpec, int heightMeasureSpec):** 绘制之前的测量方法
+* **(int)getInflatedId():** get需要加载的布局id
+* **(LayoutInflater)getLayoutInflater():** get布局加载器
+* **(int)getLayoutResource():** get需要加载的布局
+* **(View)inflate():** 见源码解析
+* **(void)setInflatedId(int inflatedId):** 对应android:inflatedId
+* **(void)setLayoutInflater(LayoutInflater inflater):** 设置布局加载器
+* **(void)setLayoutResource(int layoutResource):** 对应android:layout
+* **(void)setOnInflateListener(ViewStub.OnInflateListener inflateListener):** ViewStub的监听方法，传入一个ViewStub内置的回调接口，当ViewStub调用inflate时，在布局扩张之前会调用这个方法，回调返回的该ViewStub实例和其引用的View实例，调用View的findViewById方法可以获得布局中的控件实例，虽然不知道有什么用，不过这个监听方法确实可以通过返回的View在布局**完全展示（？）** 之前拿到其中控件的实例，可以进行一些初始化操作；**注意：该监听方法应声明在inflate方法之前，如果在inflate方法之后，那么此时布局已经完成了扩充，将不会调用该方法**
+* **(void)setVisibility(int visibility):** 可以启动ViewStub，比inflate更加安全，见inflate与setVisibility的异同
 # ViewStub优点与缺点
 
 * **优点：由于只有被inflate()之后ViewStub才会被实例化，因此比View.GONE更加省内存,且其实例化的可选择性，因此比include、merge更加灵活；**
