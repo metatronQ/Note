@@ -18,7 +18,7 @@
 
 ## 结构图：
 
-![三方法关系的结构图]()
+![三方法关系的结构图](https://github.com/metatronQ/Note/blob/master/Images/%E6%96%B9%E6%B3%95%E4%BD%93.png)
 
 ## 关系伪代码：
 	
@@ -71,7 +71,7 @@
 
 # 传递事件的三个对象及顺序
 
-![传递顺序]()
+![传递顺序](https://github.com/metatronQ/Note/blob/master/Images/%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92.png)
 
 # 各版块的事件分发机制(源码)
 
